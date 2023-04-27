@@ -1,45 +1,18 @@
-![example workflow](https://github.com/rzgry/Express-REST-API-Template/actions/workflows/node.js.yml/badge.svg)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+# Create API endpoints with Express
+This projects implements a simple RESTful API that processes HTTP requests.
 
-# Express-REST-API-Template
-
-Simple express boilerplate based off of [express-generator](https://expressjs.com/en/starter/generator.html). Includes [eslint](https://eslint.org) and [prettier](https://prettier.io) for linting/code formatting, [nodemon](https://github.com/remy/nodemon) for automatic server restarting, and [Jest](https://jestjs.io) for testing.
+It makes use of [Express.js](http://expressjs.com/), a minimal and flexible Node.js framework that includes a myriad of HTTP utility methods for quickly creating robust APIs. We also use the [Body Parser](https://github.com/expressjs/body-parser) package, which is Node.js middleware that allows us to process any POST requests we receive.
 
 ## Getting Started
+To test this project:
 
-### Install dependencies
+### With curl
+curl -H "Content-Type: application/json" -X POST -d '{"username":"test","data":"1234"}' http://rest-api.glitch.me/update
 
-```
-npm install
-```
+### In a web browser
+In a new tab, go to: https://rest-api.glitch.me/update?username=testUser&data=1234
 
-### Running in development
+Keep this project open and view 'Logs' to see the console output.
 
-```
-npm run dev
-```
-
-### Running in production
-
-```
-npm start
-```
-
-Runs on localhost:3000 by default but can be configured using the `PORT` environment variable.
-
-### Running tests
-
-```
-npm test
-
-# Watch repo
-npm run test:watch
-```
-
-### Linting
-```
-npm run lint
-
-# fix issues
-npm run lint:fix
-```
+## Getting Help
+You can see other example projects on our [Community Projects](https://glitch.com/) page. And if you get stuck, let us know on the [forum](http://support.glitch.com/) and we can help you out.
